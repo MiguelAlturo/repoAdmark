@@ -1,0 +1,74 @@
+/*Standart mixins to responsvie desing*/
+$screen-smart-xs-min: 330px; 
+//smartphone 330px iphone 5s
+$screen-smart-md-min:376px;
+//smartphone 375px iphone 6/7/8
+$screen-smart-lg-min: 460px; 
+// Small tablets and large smartphones (landscape view)
+$screen-smart-xl-min: 576px;
+// min tablets (portrait view)
+// Small tablets (portrait view)
+$screen-tablet-md-min: 768px;
+// Tablets and small desktops
+$screen-tablet-lg-min: 992px;
+// Large tablets and desktops
+$screen-desktop-xs-min: 1200px;
+$screen-desktop-md-min: 1366px;
+// desktop devices
+$screen-desktop-lg-min: 1600px;
+
+// Smart phone xs
+  
+@mixin smart-xs-min {
+  @media (min-width: #{$screen-smart-xs-min}) {
+      @content;
+  }
+}
+// Smart phone md
+@mixin smart-md-min {
+  @media (min-width: #{$screen-smart-md-min}) {
+      @content;
+  }
+}
+// Smart phone lg
+@mixin smart-lg-min {
+    @media (min-width: #{$screen-smart-lg-min}) {
+        @content;
+    }
+  }
+// Small devices
+@mixin smart-xl-min {
+  @media (min-width: #{$screen-smart-xl-min}) {
+      @content;
+  }
+}
+//Medium devices min
+@mixin tablet-md-min {
+  @media (min-width: #{$screen-tablet-md-min}) {
+      @content;
+  }
+}
+// Medium devices
+@mixin tablet-lg-min {
+  @media (min-width: #{$screen-tablet-lg-min}) {
+      @content;
+  }
+}
+// Large devices
+@mixin desktop-xs-min {
+  @media (min-width: #{$screen-desktop-xs-min}) {
+      @content;
+  }
+}
+// Extra large devices
+@mixin desktop-md-min {
+  @media (min-width: #{$screen-desktop-md-min}) {
+      @content;
+  }
+}
+// Extra large devices
+@mixin desktop-lg-min {
+  @media (min-width: #{$screen-desktop-lg-min}) {
+      @content;
+  }
+}

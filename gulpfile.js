@@ -64,6 +64,7 @@ function setData(cb) {
 }
 
 function reloadFiles(cb) {
+    watch('src/**/*.html', setHtml);
     watch('src/*.html').on('change', browserSync.reload);
     watch('src/scss/**/*.scss', setSass);
     watch('src/scss/**/*.scss').on('change', browserSync.reload);
