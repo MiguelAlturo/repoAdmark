@@ -1,6 +1,18 @@
 @import '../vendor/medias.scss';
 footer{
-    height: 20px;
+    height: 60px;
     width: 100%;
-    background-color: #991616;
+    background: #5d9740;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5%;
+    @include tablet-lg-min(){
+        padding: 1%;
+        span{
+            width: 1140px;
+            margin: auto;
+        }
+    }
 }

@@ -1,7 +1,20 @@
 @import '../vendor/medias.scss';
 header{
-    height: 20px;
+    height: 70px;
     width: 100%;
-    background-color: aquamarine;
+    background-color: #fff;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    .logo{
+       max-width: 1140px;
+       @include tablet-lg-min(){
+           width: 100%;
+           margin: auto;
+       }        
+        @include desktop-xs-min(){
+            width: 1140px;
+        }
+    }
 }
 

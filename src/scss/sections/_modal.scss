@@ -1,0 +1,33 @@
+@import '../vendor/medias.scss';
+.modal{
+    &.show .modal-dialog {       
+        @include desktop-xs-min(){
+            max-width: 23%;
+        }
+    }
+    .modal-header {
+        background: #5d9740;
+        padding: 8px 10px 40px;
+        button.close {
+            border: 1px solid #ffffff;
+            background: transparent;
+            color: #fff;
+            border-radius: 30px;
+            font-size: 10px;
+            @include desktop-xs-min(){
+                padding: 0px 4px;
+            }
+        }
+    }
+    .modal-body {
+        font-size: 26px;
+        text-align: center;
+        padding: 80px 10px;
+        font-weight: 900;
+        @include desktop-xs-min(){
+            font-size: 35px;
+            text-align: center;
+            padding: 110px 30px;
+        }
+    }
+}

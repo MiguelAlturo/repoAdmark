@@ -1,0 +1,48 @@
+@import '../vendor/medias.scss';
+.form-client{
+    background-color: #fff;
+    @include tablet-lg-min(){
+        position: absolute;
+        right: 0px;
+        width: 320px;
+        top: -38px;
+        box-shadow: 4px 5px 15px 0px #706b6b;
+    }
+    h2{
+        margin: 15px auto;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        color: gray;
+    }
+    form{
+       margin: 15px auto;
+       max-width: 90%;
+       input{
+           background-color: rgb(242, 248, 252);
+           padding: 10px;
+           margin: 10px auto;
+           border: none;
+           outline: none;
+           ::-webkit-input-placeholder,&:-moz-placeholder,::-moz-placeholder,:-ms-input-placeholder { 
+               color: rgb(128, 128, 128); 
+               font-weight: 600;
+            }  
+       }
+       .form-check {
+        margin: 15px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding: 0px;
+        input,a,label{
+            color: rgb(128, 128, 128);
+        }
+        input{
+            border: 1px solid;
+            margin: 0px 10px 0px 0px;
+        }
+    }
+    }
+}

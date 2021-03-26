@@ -42,11 +42,13 @@ function setHtml(cb) {
     cb();
 }
 
-// function setImages(cb) {    
-//     src('src/images/logo/*')
-//         .pipe(dest('dist/images/logo'));
-//     cb();
-// }//setImages
+function setImages(cb) {    
+    src('src/images/logo/*')
+        .pipe(dest('dist/images/logo'));
+    src('src/images/icons/*')
+        .pipe(dest('dist/images/icons'));
+    cb();
+}
 
 function setJs(cb) {
     src(['src/scripts/**/*.js'])
@@ -72,4 +74,4 @@ function reloadFiles(cb) {
     cb();
 }
 
-exports.default = series(setSass, initBrowserSync, setHtml,setData ,setJs,reloadFiles); 
+exports.default = series(setSass, initBrowserSync, setHtml,setData ,setImages,setJs,reloadFiles); 

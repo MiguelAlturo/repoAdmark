@@ -1,5 +1,8 @@
-@import 'sections/header','sections/footer';
+@import 'sections/header','sections/footer', 'sections/offers','vendor/buttom.scss','sections/formClient','sections/modal','./vendor/medias.scss';
 
 body{
     font-family: 'Lato', sans-serif;
+    @include desktop-xs-min(){
+        background: #f2f8fc;
+    }
 }

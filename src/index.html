@@ -1,20 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.min.css">
 </head>
+
 <body>
-    <header></header>
-    
-    <!-- <footer></footer> -->
+    <header>
+        <div class="logo">
+            <a class="logo" href="javascript:void(0)"><img src="./images/logo/logo-mobile.png" alt="logo"></a>
+        </div>
+    </header>
+    <section class="offers">
+        <div class="content-title">
+            <h2>Titulo de la pagina</h2>
+        </div>
+        <div class="content-body-offer">
+
+            <div class="content-offer">
+                <div class="offer-title">
+                    <strong>OFERTA ONLINE</strong>
+                    <div class="offer-value">
+                        <span>40</span>
+                        <div class="percentage">
+                            <span>$</span>
+                            <span>DTO.</span>
+                        </div>
+                    </div>
+                    <p>AL COMPRAR ONLINE</p>
+                    <button type="button" class="btn btn-warning">¡Obtener oferta!</button>
+                </div>
+            </div>
+            <div class="form-client">
+                <h2>Te llamamos gratis</h2>
+                <form action="" id="formClient">
+                    <input class="form-control" type="phone" required placeholder="Teléfono">
+                    <input class="form-control" type="text" required placeholder="Nombre">
+                    <input class="form-control" type="email" required placeholder="Email">
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" required id="terms">
+                            <label class="form-check-label" for="terms">
+                                Acepto la <a href="javascript:void0()">politica de privacidad</a>
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-warning form-btn">
+                        <img src="./images/icons/icon-operator.png" alt="" />
+                        <span>
+                            LLÁMAME GRATIS
+                        </span>
+                        <img src="./images/icons/icon-arrow-right.png" alt="">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <button type="button" class="btn open-modal" data-toggle="modal" data-target="#congratulation"></button>
+    <div class="modal fade" id="congratulation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ¡Gracias por contactar con nosotros!
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span>Footer © 2020</span>
+    </footer>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="./scripts/script.js"></script>
+
 </html>

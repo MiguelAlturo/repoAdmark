@@ -1,0 +1,42 @@
+@import '../vendor/medias.scss';
+button.btn.btn-warning {
+    color: #fff;
+    background: #f6a026;
+    background-image: linear-gradient(#EE8B2C, #ff931e);
+    padding: 20px 30px;
+    border-radius: 52px;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    outline: none;
+    transition: .3s;
+    @include tablet-lg-min(){
+        border-radius: 20px;
+    }
+    @include desktop-xs-min(){
+        border-radius: 11px;
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+    &:hover{
+        box-shadow: 0px 4px 8px 0px #848484;
+    }
+    &.open-modal{
+        display: none;
+    }
+    &.form-btn{
+        border-radius: 27px;
+        padding: 20px 15px;
+        @include desktop-xs-min(){
+            border-radius: 16px;
+            padding: 11px 15px;
+            font-size: 17px;
+        }
+        img{
+            padding: 0px 15px;
+        }
+    }
+}

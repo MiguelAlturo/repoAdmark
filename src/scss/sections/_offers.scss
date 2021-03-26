@@ -1,0 +1,99 @@
+@import '../vendor/medias.scss';
+.offers{
+    background:rgb(242,248,252);
+    .content-title{
+        background: #5d9740;
+        h2{
+            color: #fff;
+            padding: 7px 15px;
+            font-size: 20px;
+            font-weight: 300;
+            margin: 0px;
+            @include tablet-lg-min(){
+                max-width: 90%;
+                margin:0px auto;
+            }
+            @include desktop-xs-min(){
+                max-width: 1140px;
+                padding:7px 0px;
+            }
+        }
+    }
+    .content-body-offer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        @include tablet-lg-min(){
+            flex-direction: row;
+            position: relative;
+            justify-content: space-between;
+            max-width: 95%;
+            margin: auto;
+        }
+        @include desktop-xs-min(){
+            max-width: 1140px;
+        }
+    .content-offer{
+        .offer-title {
+            margin: auto;
+            text-align: center;
+            max-width: 212px;
+            padding: 35px 0px;
+            @include smart-md-min(){
+                max-width: 300px
+            }
+            strong {
+                display: block;
+                padding: 4px 8px;
+                background: #5d9740;
+                color: #fff;
+                text-transform: uppercase;
+                max-width: 280px;
+                border-radius: 6px;
+                margin: 15px auto;
+                font-weight: 400;
+                filter: drop-shadow(2px 4px 6px black);
+                @include desktop-xs-min(){
+                    font-size: 18px;
+                    padding: 3px 40px;
+                }
+            }
+        }
+        .offer-value {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span {
+                color: #5d9740;
+                font-size: 80px;
+                font-weight: 900;
+                line-height: 1;
+                @include desktop-xs-min(){
+                    font-size: 110px;
+                }
+            }
+            .percentage {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                span{
+                    font-size: 20px;
+                    @include desktop-xs-min(){
+                        font-size: 30px;
+                    }
+                    &:first-child{
+                        font-size: 40px;
+                        @include desktop-xs-min(){
+                            font-size: 60px;
+                        }
+                    }
+                }
+            }
+        }
+        p {
+            font-weight: 600;
+        }
+    }
+
+    }
+}
