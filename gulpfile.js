@@ -24,7 +24,7 @@ function setSass(cb) {
         .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(rename('styles.min.css'))
         .pipe(dest('dist/css'))
-        .pipe(dest('css'))
+        .pipe(dest('dist/css'))
         .pipe(browserSync.stream());
     cb();
 }
